@@ -14,7 +14,7 @@ try:
         raise ValueError("GEMINI_API_KEY tidak ditemukan di environment variables.")
     genai.configure(api_key=api_key)
 
-    gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+    gemini_model = genai.GenerativeModel('gemini-2.5-flash')
 except Exception as e:
     gemini_model = None
     print(f"❌ Gagal mengkonfigurasi atau memuat model: {e}")
